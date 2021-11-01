@@ -1,0 +1,8 @@
+
+@import url('side.css');
+
+li {
+    list-style: none;
+    font-weight: normal;
+}
+
