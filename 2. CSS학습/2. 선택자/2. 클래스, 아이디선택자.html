@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .orang {
+            color: orange;
+        }
+        #big-orang {
+            font-size: 1.5em;
+        }
+
+        .reverse {
+            transform: rotate(180deg);
+            width: fit-content;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- div>(ul>li*3)+div+p+span -->
+    <div>
+        <ul>
+            <li>사과</li>
+            <li class="reverse">딸기</li>
+            <li id="big-orang" class="orang reverse">오렌지</li>
+        </ul>
+        <div class="reverse">당근</div>
+        <p>토마토</p>
+        <span class="orang">오렌지</span>
+    </div>
+
+</body>
+</html>
