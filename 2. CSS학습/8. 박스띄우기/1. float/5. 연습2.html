@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* reset */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        ul, li {
+            margin: 0;
+            padding: 0;
+            /* 앞에 까만 점 제거 */
+            list-style: none;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* layout */
+        ul {            
+            width: 40%;
+            margin: 20px auto 0;
+            float: left;
+            margin-right: 30px;
+            padding: 30px;
+        }
+        ul li {
+            width: 18%;            
+            /* border: 2px solid #000; */
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            margin-right: 2%;
+            
+        }
+        ul li:hover {
+            color: orange;
+            border-bottom: 3px solid red;
+            padding-bottom: 5px;
+        }
+
+        ul.gnb {
+            /* border: 2px solid crimson; */
+        }
+        ul.tnb {
+            /* border: 2px solid tomato; */
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- nav>ul.gnb>li*5>a -->
+    <nav class="clearfix">
+        <ul class="gnb clearfix">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BOARD</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+        </ul>
+
+        <ul class="tnb clearfix">
+            <li><a href="#">검색</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

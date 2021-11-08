@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid red;
+            /* overflow: hidden; */
+        }
+        .container2 {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid blue;
+        }
+        .container3 {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid green;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            /* 테두리 둥글게 */
+            border-radius: 20px;
+            float: left;
+        }
+        .clearbox {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- <div class="clearbox"></div> -->
+    </div>
+    <div class="container2 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>        
+    </div>
+    <div class="container3 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>        
+    </div>
+
+</body>
+</html>
