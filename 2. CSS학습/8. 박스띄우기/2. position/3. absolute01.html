@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            border: 4px dashed red;
+            font-size: 30px;
+            text-align: center;
+            /* 텍스트를 y축 중앙정렬 할때는 line-height값을 height와 같게 */
+            line-height: 100px;
+        }
+        .box:nth-child(2) {
+            position: absolute;
+            left:60px;
+            top: 60px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+
+</body>
+</html>
